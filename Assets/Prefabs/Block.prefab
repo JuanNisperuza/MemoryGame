@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 144596340210742827}
   - component: {fileID: -4602507066914534113}
   - component: {fileID: -823805527087226790}
+  - component: {fileID: -855418220611349268}
   m_Layer: 0
   m_Name: Block
   m_TagString: Untagged
@@ -103,8 +104,10 @@ MonoBehaviour:
   column: 0
   id: 0
   blockImage: {fileID: 1626044033030681840}
+  blockBackground: {fileID: 144596340210742827}
   frontSprite: {fileID: 0}
   backSprite: {fileID: -5177388603050735206, guid: 71ebafeef3c03457483266a33ab2b270, type: 3}
+  blockAnimations: {fileID: 0}
 --- !u!61 &-823805527087226790
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150,6 +153,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.984375, y: 0.984375}
   m_EdgeRadius: 0
+--- !u!114 &-855418220611349268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4924997958626763522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdd64ee995a1704eaa0776b1bec6f49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  block: {fileID: -4602507066914534113}
+  hoverSound: {fileID: 8300000, guid: 3f080bd3d26b6ac4a8c66978664471df, type: 3}
+  clickSound: {fileID: 8300000, guid: 8fd6f456db9f4cf48b0e1ff1606d0e43, type: 3}
 --- !u!1 &6741541748741922892
 GameObject:
   m_ObjectHideFlags: 0
